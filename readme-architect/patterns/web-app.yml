@@ -1,0 +1,51 @@
+project_type: web_app
+description: Frontend or full-stack web applications where users need a quick demo,
+  local dev path, feature overview, and deployment clues.
+priority_sections:
+- hero
+- demo
+- screenshots
+- features
+- tech_stack
+- getting_started
+- configuration
+- architecture
+- deployment
+- project_structure
+recommended_sections:
+- badges
+- environment_variables
+- testing
+- accessibility_notes
+- browser_support
+- contributing
+- license
+avoid:
+- burying the demo below internals
+- claiming production deployment without provider evidence
+- listing every component as a feature
+- omitting env setup for API-backed apps
+visuals:
+- screenshot gallery
+- demo link badge
+- Mermaid app/data flow
+- feature table
+required_evidence:
+- package.json scripts
+- framework config
+- routes/pages/app directory
+- public/assets screenshots
+- env examples
+- deployment config if deployment is documented
+readme_strategy: Lead with what the user can see or try. Keep setup concise, then
+  explain stack, architecture, and deployment based on framework/provider evidence.
+classifier_signals:
+- Next.js
+- Vite
+- React
+- Vue
+- Svelte
+- Astro
+- pages/
+- app/
+- src/routes

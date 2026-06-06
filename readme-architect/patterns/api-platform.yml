@@ -1,0 +1,53 @@
+project_type: api_platform
+description: API-first services, REST/GraphQL backends, SDK backends, and platforms
+  centered around programmatic access.
+priority_sections:
+- hero
+- api_overview
+- quick_start_request
+- authentication
+- endpoints_or_schema
+- architecture
+- configuration
+- local_development
+- deployment
+- testing
+- license
+recommended_sections:
+- OpenAPI_link
+- GraphQL_schema
+- SDK_examples
+- rate_limits
+- errors
+- observability
+- contributing
+avoid:
+- frontend screenshots as primary proof
+- invented endpoints
+- omitting auth requirements
+- unclear base URL or local port
+visuals:
+- request/response examples
+- OpenAPI/GraphQL badges
+- service architecture diagram
+- endpoint table
+required_evidence:
+- OpenAPI spec
+- GraphQL schema
+- route/controller files
+- server framework config
+- auth middleware
+- tests/examples proving requests
+readme_strategy: Start with a request a developer can run. Document auth, core endpoints/schema,
+  local server setup, and architecture boundaries.
+classifier_signals:
+- OpenAPI
+- REST routes
+- GraphQL schema
+- server framework
+- FastAPI
+- Express
+- Django
+- Rails
+- Spring
+- Gin

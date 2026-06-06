@@ -1,0 +1,50 @@
+project_type: open_data_project
+description: Datasets, scrapers, importers, ETL pipelines, civic/public data, analytics
+  repositories, and reproducible data products.
+priority_sections:
+- hero
+- data_sources
+- update_frequency
+- pipeline
+- schema
+- usage
+- reproducibility
+- license_attribution
+- contributing
+recommended_sections:
+- data_quality
+- limitations
+- download_links
+- examples
+- architecture
+- automation_schedule
+- roadmap
+avoid:
+- hiding source attribution
+- claiming real-time freshness without schedule evidence
+- omitting schema
+- omitting limitations
+- unclear licensing
+visuals:
+- pipeline Mermaid diagram
+- schema tables
+- data freshness badges if automated
+- sample records
+required_evidence:
+- dataset files or generation scripts
+- source URLs/docs
+- schemas
+- scraping/import scripts
+- CI schedules
+- license/attribution requirements
+- sample outputs
+readme_strategy: Prioritize trust and reproducibility. Explain where data comes from,
+  how it is transformed, how often it updates, schema shape, limitations, and attribution.
+classifier_signals:
+- datasets
+- data pipeline
+- CSV/JSON generation
+- scraping/import scripts
+- data/
+- notebooks
+- schema

@@ -1,0 +1,46 @@
+project_type: chrome_extension
+description: Browser extensions where permissions, install/load instructions, screenshots,
+  browser support, and privacy boundaries are critical.
+priority_sections:
+- hero
+- screenshots
+- features
+- browser_support
+- installation_load_unpacked
+- permissions
+- architecture
+- configuration
+- release_packaging
+- privacy
+- license
+recommended_sections:
+- demo_gif
+- content_scripts
+- background_service_worker
+- storage_notes
+- contributing
+avoid:
+- ignoring permissions
+- claiming Chrome Web Store availability without link
+- omitting load-unpacked instructions
+- vague privacy claims
+visuals:
+- extension screenshots
+- manifest/permissions table
+- background/content script architecture diagram
+required_evidence:
+- manifest.json
+- permissions list
+- background/content script files
+- extension icons/screenshots
+- build scripts
+- store listing evidence if mentioned
+readme_strategy: 'Build trust first: show what the extension does, how to load it,
+  what permissions it requests, and how its scripts communicate.'
+classifier_signals:
+- manifest.json
+- background script
+- content script
+- permissions
+- chrome.runtime
+- browser.runtime
