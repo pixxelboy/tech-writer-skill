@@ -199,7 +199,7 @@ criteria:
 ## Repository layout
 
 ```text
-readme-architect/
+.
 ├── README.md
 ├── LICENSE
 ├── patterns/
