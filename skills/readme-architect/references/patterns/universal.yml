@@ -1,0 +1,53 @@
+sections:
+  hero:
+    required: true
+    purpose: "Explain the project in one strong sentence."
+  badges:
+    required: false
+    purpose: "Show build status, license, package version, release, or platform support."
+  demo:
+    required: false
+    purpose: "Show the product quickly through links, screenshots, or GIFs."
+  why:
+    required: true
+    purpose: "Explain the problem and why this project exists."
+  features:
+    required: true
+    purpose: "List real capabilities discovered from the repository."
+  architecture:
+    required: false
+    purpose: "Explain system structure using text and Mermaid diagrams."
+  getting_started:
+    required: true
+    purpose: "Help users run the project locally."
+  configuration:
+    required: false
+    purpose: "Document required environment variables and config files."
+  usage:
+    required: true
+    purpose: "Show practical examples."
+  project_structure:
+    required: false
+    purpose: "Help contributors navigate the repository."
+  roadmap:
+    required: false
+    purpose: "Show direction and planned improvements."
+  contributing:
+    required: false
+    purpose: "Invite contributions clearly."
+  license:
+    required: true
+    purpose: "Document project license."
+composition_rules:
+  - "README Architect does not copy templates. It learns patterns, detects project context, and composes the most useful README for that repository."
+  - "Lead with the fastest path to understanding for the repository's primary audience."
+  - "Prefer screenshots/demos before architecture for visual products."
+  - "Prefer install and minimal usage before deep explanation for libraries and CLIs."
+  - "Mark missing evidence with targeted TODOs instead of filling gaps with assumptions."
+quality_gates:
+  minimum_success_score: 9.0
+  must_include:
+    - evidence-backed hero
+    - real setup path or TODO
+    - license section
+    - usage section or TODO

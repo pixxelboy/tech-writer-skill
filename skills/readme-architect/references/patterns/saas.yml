@@ -1,0 +1,55 @@
+project_type: saas
+description: Multi-user web products with auth, billing, dashboards, database workflows,
+  integrations, or production deployment concerns.
+priority_sections:
+- hero
+- product_story
+- demo
+- features
+- architecture
+- tech_stack
+- getting_started
+- configuration
+- database_setup
+- deployment
+- security_privacy
+- roadmap
+recommended_sections:
+- screenshots
+- integrations
+- billing_notes
+- multi_tenant_model
+- observability
+- contributing
+- license
+avoid:
+- claiming SOC2/security posture without evidence
+- inventing billing/auth providers
+- one-click deploy claims without config
+- marketing copy disconnected from code
+visuals:
+- dashboard screenshots
+- system architecture diagram
+- integration table
+- environment variable table
+required_evidence:
+- auth routes/dependencies
+- billing provider files/env vars
+- database schema/migrations
+- API routes
+- dashboard pages
+- deployment config
+- integration clients
+readme_strategy: Tell the product story, then prove it with features and architecture.
+  Be explicit about local database/env setup and deployment only when backed by config.
+classifier_signals:
+- auth
+- billing
+- dashboard
+- API routes
+- database migrations
+- stripe
+- prisma
+- supabase
+- clerk
+- next-auth

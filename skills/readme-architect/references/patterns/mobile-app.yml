@@ -1,0 +1,53 @@
+project_type: mobile_app
+description: Native or cross-platform mobile applications where screenshots, platform
+  support, device setup, permissions, and release flow matter.
+priority_sections:
+- hero
+- screenshots
+- platform_support
+- features
+- install_on_device_or_simulator
+- configuration
+- architecture
+- permissions
+- release_distribution
+- roadmap
+recommended_sections:
+- badges
+- demo_video
+- offline_behavior
+- deep_links
+- testing
+- contributing
+- license
+avoid:
+- generic web-app deployment sections unless evidence exists
+- claiming App Store or Play Store availability without links/config
+- omitting screenshots when UI assets exist
+- inventing offline support or push notifications
+visuals:
+- screenshot gallery
+- short animated GIF if present
+- architecture Mermaid from data/service/UI layers
+- platform badges
+required_evidence:
+- AndroidManifest.xml or iOS project files
+- Gradle/Xcode/Expo/Flutter config
+- run/build scripts
+- screens or routes
+- asset/screenshot directories
+- permission declarations
+- release config if release instructions are included
+readme_strategy: Open with the user value and visual proof. Show screenshots before
+  long architecture. Prioritize install/run on simulator or device, then configuration,
+  app structure, permissions, and release notes.
+classifier_signals:
+- AndroidManifest.xml
+- build.gradle
+- Kotlin files
+- Swift files
+- ios/
+- android/
+- app.json
+- expo
+- pubspec.yaml

@@ -4,10 +4,13 @@ description: Use when generating, rewriting, auditing, or improving README.md fi
 version: 1.1.0
 author: README Architect contributors
 license: MIT
+platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [readme, documentation, open-source, technical-writing, repository-analysis, pattern-library]
     related_skills: [codebase-inspection, requesting-code-review, writing-plans]
+    requires_toolsets: [file]
+    homepage: https://github.com/pixxelboy/tech-writer-skill
 ---
 
 # README Architect
@@ -58,8 +61,8 @@ Do not use this skill for:
 
 1. Inspect repository evidence.
 2. Classify project type.
-3. Load the universal README pattern from `patterns/universal.yml`.
-4. Load the most relevant project-specific pattern from `patterns/<type>.yml`.
+3. Load the universal README pattern from `${HERMES_SKILL_DIR}/references/patterns/universal.yml`.
+4. Load the most relevant project-specific pattern from `${HERMES_SKILL_DIR}/references/patterns/<type>.yml`.
 5. Compose a README structure for this repository, not a static template.
 6. Generate content from repository evidence.
 7. Mark missing information as TODO.
@@ -89,7 +92,7 @@ Borrow sections across patterns when evidence supports it. Example: a SaaS repos
 
 ## Pattern Library
 
-The pattern library lives at repository root under `patterns/`:
+The installable pattern library is bundled with this skill under `${HERMES_SKILL_DIR}/references/patterns/`:
 
 - `universal.yml` — shared README components and quality gates
 - `mobile-app.yml` — mobile screenshots, device/simulator install, permissions, release/distribution
@@ -102,7 +105,7 @@ The pattern library lives at repository root under `patterns/`:
 - `api-platform.yml` — quick request, auth, endpoints/schema, local server, deployment
 - `open-data-project.yml` — sources, pipeline, schema, update frequency, reproducibility, attribution
 
-Read `docs/pattern-library.md` and `docs/source-inspiration.md` when adapting patterns or explaining how this skill works.
+Read `${HERMES_SKILL_DIR}/docs/pattern-library.md` and `${HERMES_SKILL_DIR}/docs/source-inspiration.md` when adapting patterns or explaining how this skill works.
 
 ## Repository Understanding Engine
 
@@ -285,8 +288,8 @@ project:
   license: "MIT | Apache-2.0 | TODO"
 
 pattern_selection:
-  universal_pattern: "patterns/universal.yml"
-  primary_pattern: "patterns/<type>.yml"
+  universal_pattern: "${HERMES_SKILL_DIR}/references/patterns/universal.yml"
+  primary_pattern: "${HERMES_SKILL_DIR}/references/patterns/<type>.yml"
   borrowed_sections: []
   rationale: "..."
 

@@ -48,7 +48,7 @@ Use evidence, not preference. A package with a CLI entry point and importable AP
 
 ## Stage 4: Pattern selection
 
-Load `patterns/universal.yml` and the most relevant project-specific pattern. README Architect does not copy templates. It learns patterns, detects project context, and composes the most useful README for that repository. If evidence is missing, insert targeted TODOs.
+Load `${HERMES_SKILL_DIR}/references/patterns/universal.yml` and the most relevant project-specific pattern from `${HERMES_SKILL_DIR}/references/patterns/`. README Architect does not copy templates. It learns patterns, detects project context, and composes the most useful README for that repository. If evidence is missing, insert targeted TODOs.
 
 ## Stage 5: Adaptive outline composition
 

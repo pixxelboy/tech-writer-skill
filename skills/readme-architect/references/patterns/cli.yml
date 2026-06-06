@@ -1,0 +1,47 @@
+project_type: cli
+description: Command-line tools where install, first command, command reference, examples,
+  config, and shell ergonomics matter most.
+priority_sections:
+- hero
+- install
+- quick_usage
+- commands
+- examples
+- configuration
+- flags_options
+- development
+- license
+recommended_sections:
+- badges
+- shell_completion
+- exit_codes
+- environment_variables
+- troubleshooting
+- contributing
+avoid:
+- long product story before usage
+- commands not found in source
+- invented flags
+- screenshots unless terminal output/GIF exists
+visuals:
+- terminal session snippets
+- command tables
+- asciinema/GIF if present
+- option tables
+required_evidence:
+- bin or executable metadata
+- argparse/click/commander/yargs definitions
+- console_scripts
+- README/examples/tests proving commands
+- package manager install metadata
+readme_strategy: Show installation and a one-line useful command immediately. Follow
+  with command table, real examples, configuration, and development instructions.
+classifier_signals:
+- bin/
+- commander
+- click
+- argparse
+- yargs
+- console_scripts
+- cobra
+- clap

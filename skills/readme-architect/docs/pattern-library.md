@@ -6,7 +6,7 @@ The pattern library turns README generation into an adaptive process. A mobile a
 
 ## Pattern files
 
-The root `patterns/` directory contains YAML patterns:
+The installable skill bundles YAML patterns in `${HERMES_SKILL_DIR}/references/patterns/`. The repository root also mirrors them under `patterns/` for browsing:
 
 - `universal.yml` defines shared README components: hero, badges, demo, why, features, architecture, getting started, configuration, usage, project structure, roadmap, contributing, and license.
 - Project-specific files define section priorities, recommended sections, anti-patterns, visual conventions, evidence requirements, and strategy.
@@ -15,8 +15,8 @@ The root `patterns/` directory contains YAML patterns:
 
 1. Build an evidence map from repository files.
 2. Classify the project type.
-3. Load `patterns/universal.yml`.
-4. Load the most relevant project-specific pattern.
+3. Load `${HERMES_SKILL_DIR}/references/patterns/universal.yml`.
+4. Load the most relevant project-specific pattern from `${HERMES_SKILL_DIR}/references/patterns/`.
 5. Compose a custom outline.
 6. Fill sections from repository evidence.
 7. Use TODOs for missing evidence.

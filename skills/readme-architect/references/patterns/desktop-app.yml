@@ -1,0 +1,47 @@
+project_type: desktop_app
+description: Desktop applications built with Electron, Tauri, SwiftUI, Qt, .NET, or
+  native desktop stacks.
+priority_sections:
+- hero
+- screenshots
+- platform_support
+- install
+- run_from_source
+- features
+- architecture
+- packaging_distribution
+- configuration
+- roadmap
+- license
+recommended_sections:
+- auto_update
+- system_requirements
+- keyboard_shortcuts
+- privacy
+- contributing
+avoid:
+- web-only deployment instructions
+- claiming signed releases without artifacts
+- omitting OS support
+- inventing auto-update
+visuals:
+- screenshot gallery
+- platform badges
+- app architecture diagram
+- release artifact table
+required_evidence:
+- Electron/Tauri/native config
+- package scripts
+- platform project files
+- release workflow
+- screenshots/assets
+- system permission declarations
+readme_strategy: Lead with screenshots and supported platforms. Then document installation/run-from-source,
+  packaging, and desktop-specific permissions or distribution.
+classifier_signals:
+- Electron
+- Tauri
+- SwiftUI macOS
+- native desktop app config
+- electron-builder
+- tauri.conf.json

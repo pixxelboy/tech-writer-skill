@@ -1,0 +1,47 @@
+project_type: library
+description: Importable packages, SDKs, frameworks, and reusable modules where API
+  examples and compatibility matter.
+priority_sections:
+- hero
+- install
+- minimal_code_example
+- api_overview
+- usage_examples
+- advanced_usage
+- version_compatibility
+- testing
+- contributing
+- license
+recommended_sections:
+- badges
+- package_status
+- typed_api_notes
+- performance_notes
+- migration_guide
+- examples_directory
+avoid:
+- architecture before first code example
+- inventing public APIs
+- claiming language/runtime support not in metadata
+- omitting version compatibility
+visuals:
+- compact code examples
+- API tables
+- package badges
+- module relationship diagram when useful
+required_evidence:
+- package exports/public entrypoints
+- pyproject/package metadata
+- src/index.* or equivalent
+- examples/tests/docs showing API
+- version/runtime constraints
+readme_strategy: Get developers to first successful import quickly. Use minimal examples
+  before full API detail. Separate stable public API from internal modules.
+classifier_signals:
+- package exports
+- src/index.*
+- pyproject package
+- published package metadata
+- setup.py
+- crate metadata
+- go package

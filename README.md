@@ -59,8 +59,8 @@ Workflow:
 
 1. Inspect repository evidence.
 2. Classify project type.
-3. Load `patterns/universal.yml`.
-4. Load the most relevant project-specific pattern.
+3. Load the bundled universal pattern from `skills/readme-architect/references/patterns/universal.yml`.
+4. Load the most relevant project-specific pattern from `skills/readme-architect/references/patterns/`.
 5. Compose a README structure for the repository.
 6. Generate content from repository evidence.
 7. Mark missing information as TODO.
@@ -83,7 +83,7 @@ Workflow:
 
 ## Pattern library
 
-The pattern library lives in `patterns/`:
+The installable pattern library is bundled inside the skill at `skills/readme-architect/references/patterns/`. The repository root also mirrors it in `patterns/` for easier browsing:
 
 ```text
 patterns/
@@ -123,7 +123,7 @@ Copy or symlink the skill into an agent skill directory:
 cp -R skills/readme-architect ~/.hermes/skills/readme-architect
 ```
 
-For other agent systems, install the `skills/readme-architect` directory wherever that system loads reusable skills. Keep the root `patterns/` directory available to the agent, because the skill references it during pattern selection.
+For other agent systems, install the `skills/readme-architect` directory wherever that system loads reusable skills. The installable skill is self-contained; its pattern library is bundled under `references/patterns/`.
 
 ## Usage
 
@@ -202,7 +202,9 @@ criteria:
 .
 ├── README.md
 ├── LICENSE
-├── patterns/
+├── SUBMISSION.md
+├── skills.sh.json
+├── patterns/                       # browsable mirror of bundled patterns
 │   ├── README.md
 │   ├── universal.yml
 │   ├── mobile-app.yml
@@ -219,7 +221,9 @@ criteria:
 │       ├── SKILL.md
 │       ├── templates/
 │       ├── examples/
-│       └── docs/
+│       ├── docs/
+│       └── references/
+│           └── patterns/           # self-contained runtime pattern library
 └── tests/
 ```
 
